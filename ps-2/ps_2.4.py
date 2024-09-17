@@ -46,7 +46,7 @@ def mandelbrot_fancy():
     for i in np.arange(T):
         I=np.ones((N,N), dtype=np.float32)*(T-i)#very memory inefficient, I know
         z=np.where(np.absolute(z)>=2, z, z**2+c)
-        Converge=np.where(np.absolute(z)>=2,np.maximum(I,Converge), 0.1)
+        Converge=np.where(np.absolute(z)>=2,np.maximum(I,Converge), 0.)
     
     Converge=np.where(Converge>0.1,Converge**3, 0.)
 
