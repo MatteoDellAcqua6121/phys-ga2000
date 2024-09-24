@@ -1,4 +1,5 @@
 import pytest
+
 import numpy as np
 import quadratic
 
@@ -17,3 +18,5 @@ def test_quadratic():
     x1, x2 = quadratic.quadratic(a=1., b=8., c=12.)
     assert (np.abs(x1 - (- 2.)) < 1.e-10)
     assert (np.abs(x2 - (- 6)) < 1.e-10)
+
+test_quadratic()

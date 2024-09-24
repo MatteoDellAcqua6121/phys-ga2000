@@ -1,3 +1,5 @@
+import numpy as np
+
 def usual_quadratic(a,b,c):
     delta=b**2-4*a*c
     if delta>=0 and a!=0:
