@@ -39,7 +39,7 @@ skewness=np.zeros(N, dtype=np.float64)
 kurtosis=np.zeros(N, dtype=np.float64)
 
 #s=0
-#t=0
+# t=0
 
 #Extract a bunch of y at defferent levels of i and compute the momenta (unbiased)
 for i in range(N):
