@@ -69,3 +69,18 @@ plt.ylabel(r'$C_T$(T) [J/K]')
 
 plt.show()
 plt.savefig('Debye_convergence.png')
+
+plt.figure(figsize=(8, 6))
+for j in N:
+    y=np.array([c_T(xi,j) for xi in x])
+    plt.plot(x, y, label=f'N={j}')
+
+plt.title(r'$C_T$(T)')
+plt.xlabel('T [K]')
+plt.ylabel(r'$C_T$(T) [J/K]')    
+plt.legend()
+plt.show()
+
+plt.savefig('Debye_conv_T.png')
+
+
