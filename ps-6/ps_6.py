@@ -108,18 +108,18 @@ for i in np.arange(Ng):
 
 #plot c0 vs c1
 plt.figure(figsize=(8, 6))
-plt.plot(c[:,0],c[:,1], 'o')
-plt.title(r'$c_0$ vs $c_2$')
-plt.xlabel(r'$c_0$ [au]')
-plt.ylabel(r'$c_1$ [au]')   
+plt.plot(c[:,1],c[:,0], 'o')
+plt.title(r'$c_1$ vs $c_0$')
+plt.xlabel(r'$c_1$ [au]')
+plt.ylabel(r'$c_0$ [au]')   
 plt.savefig('c1.png')
 
 #plot c0 vs c2
 plt.figure(figsize=(8, 6))
-plt.plot(c[:,0],c[:,2], 'o')
-plt.title(r'$c_0$ vs $c_2$')
-plt.xlabel(r'$c_0$ [au]')
-plt.ylabel(r'$c_2$ [au]')   
+plt.plot(c[:,2],c[:,0], 'o')
+plt.title(r'$c_2$ vs $c_0$')
+plt.xlabel(r'$c_2$ [au]')
+plt.ylabel(r'$c_0$ [au]')   
 plt.savefig('c2.png')
 
 #compute the error
