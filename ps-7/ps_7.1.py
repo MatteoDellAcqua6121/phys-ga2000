@@ -44,8 +44,12 @@ def newton_raphson(xst,m):
         if(np.abs(delta) < tol):
             return(x)
         
+#define the function computing L1 from the initial parameters
+def L1(m,R):
+    (a, b) = bracket(func,m)
+    z= newton_raphson(0.5*(a+b),m)*R
+    return z
+        
 #run the root-finding (and print the results) for each element of the array
 for i in np.arange(len(m)):
-    (a, b) = bracket(func,m[i])
-    z = newton_raphson(0.5*(a+b),m[i])*r[i]
-    print(z)
+    print(L1(m[i],r[i]))
