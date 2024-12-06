@@ -82,7 +82,7 @@ fig,axes = plt.subplots(2,3,figsize=(12,8))
 for i, ax in enumerate(axes.flat):
         ax.plot(x, np.real(psi[sample[i], :]))
         
-        ax.set_title(rf't = {sample[i]*h} [$10^{-18}$ s]', fontsize=15)
+        ax.set_title(rf't = {sample[i]*h} [$10^{{-18}}$ s]', fontsize=15)
         ax.set_xlim(( 0., L))
         ax.set_ylim((-c,c))
         
